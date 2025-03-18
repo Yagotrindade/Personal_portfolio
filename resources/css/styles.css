@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 95%;
+    height: 8%;
+    right: 2.5%;
+    left: 2.5%;
+    top: 0%;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem 1rem;
+    background-color: rgb(25, 31, 55);
+    border-radius: 0 0 5px 5px;
+    box-shadow: -1px 2px rgba(25, 31, 55,0.4);
+    z-index: 5;
+}
+
+body{
+    background-color: rgba(255, 237, 213, 0.87);
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    line-height: 1.25;
+}
+
+.header-logo-container{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.849);
+    justify-content: space-between;
+    gap: 1em;
+    margin-left: 5%
+}
+
+.navigation-bar{
+    margin-right: 5%;
+}
+
+.navigation-bar ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+
+}
+
+.navigation-bar ul li{
+    list-style: none;
+}
+
+.navigation-bar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navigation-bar ul li a:hover{
+    text-decoration: underline;
+    color: rgb(207, 207, 207);
+    transition: color 0.2s ease-in-out;                                                                                                              
+}
+
+.logo-img{
+    height: 3rem;
+    width: 2.5rem;
+    
+}
+
+.photo{
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    border-bottom: 20px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-radius: 50%;
+}
+
+.division{
+    background-color: transparent;
+    margin-top: 1.5rem;
+    background-image: radial-gradient(black 10%, transparent 10%);
+    background-size: 10px 10px;
+    height: 15vh;
+    width: 100%;
+}
+
+.marker{
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgb(39, 69, 189)
+}
+
+
+.presentation {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin-left: 4%;
+    gap: 2rem;
+    border-right: 2px solid black;
+}
+
+.button-container{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    margin-left: 6%;
+    gap: 2rem;
+    border-right: 2px solid black;
+}
+
+.projects h2{
+    margin-top: 4rem;
+    margin-left: 4%;
+}
+
+.presentation div h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.scroll-to-home{
+    position:absolute;
+    top: 0;
+}
+
+button{
+    background-color: transparent;
+}
