@@ -75,19 +75,23 @@ p{
     
 }
 
+.figure-container{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .photo{
-    width: 25%;
+    max-width: 300px;
     height: auto;
     object-fit: cover;
-    margin-bottom: 2rem;
     border-radius: 5px;
-    position: absolute;
-    right: 3%;
-    top: 20%;
     border-bottom: 20px solid black;
     border-left: 10px solid black;
     border-right: 10px solid black;
     border-radius: 50%;
+
 }
 
 .division{
@@ -110,10 +114,17 @@ p{
     margin-top: 10%;
     display: flex;
     align-items: center;
-    width: 65%;
+    width: 100%;
     margin-left: 4%;
-    gap: 2rem;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
     border-right: 2px solid black;
+
 }
 
 .button-container{
@@ -123,13 +134,17 @@ p{
     align-items: center;
     width: 40%;
     margin-left: 6%;
-    gap: 2rem;
     border-right: 2px solid black;
 }
 
-.projects h2{
+.projects-section-title{
     margin-top: 4rem;
     margin-left: 4%;
+}
+
+.projects{
+    margin-bottom: 100px;
+    display: flex;
 }
 
 .presentation div h1{
@@ -144,4 +159,31 @@ p{
 
 button{
     background-color: transparent;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    width: 10em;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(192, 205, 255);
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#first-paragraph{
+    display: none;
+}
+
+#second-paragraph{
+    display: none;
+}
+
+#third-paragraph{
+    display: none;
 }
