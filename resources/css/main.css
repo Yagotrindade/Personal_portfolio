@@ -13,7 +13,15 @@ html, body {
 }
 
 
-header{
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.header{
     display: flex;
     position: fixed;
     width: 95%;
@@ -28,6 +36,7 @@ header{
     border-radius: 0 0 5px 5px;
     box-shadow: -1px 2px rgba(25, 31, 55,0.4);
     z-index: 5;
+    padding: 2.25rem 1rem;
 }
 
 body{
@@ -110,6 +119,14 @@ p{
     height: 7.5vh;
 }
 
+.large{
+    height: 15vh;
+}
+
+.small{
+    height: 7.5vh;
+}
+
 .division{
     background-color: transparent;
     margin-top: 1.5rem;
@@ -130,6 +147,7 @@ p{
     display: flex;
     align-items: center;
     width: 100%;
+    padding-left: 4%;
     padding-left: 4%;
 }
 
@@ -187,8 +205,10 @@ button:hover{
 
 .button-container{
     margin-top: 5%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
@@ -264,7 +284,7 @@ footer{
     margin-left: 4%
 }
 
-.skill-icon{
+.icon{
     width: auto;
     height: 35px;
     flex-wrap: wrap;
@@ -317,4 +337,66 @@ footer{
     bottom: 1px;
     box-shadow: -1px 2px rgb(91, 129, 255);
     transition: box-shadow 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 700px){
+    .navigation-bar{
+        display: none;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .presentation{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .about-me{
+        border-right: none;
+        margin-top: 3rem;
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .photo{
+        height: auto;
+        width: 100%
+    }
+
+    .about-me h1, .about-me span{
+        font-size: 3rem!important;
+    }
+
+    .projects{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-container, .image-container{
+        width: 90%;
+        border-right: none;
+        margin-left: 0;
+    }
+    
+    .projects-section-title{
+        margin-top: 2rem;
+    }
+
+   .navigation-bar ul{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 1em;
+   }
 }

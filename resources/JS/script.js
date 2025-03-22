@@ -31,7 +31,7 @@ function showsecondParagraph() {
     image2.style.display = "block";
     hidefirstParagraph();
     hidethirdParagraph();
-    button2.innerHTML = "V Tea Cozy";
+    button2.innerHTML = "V Photomatic";
     button2.removeEventListener('click', showsecondParagraph)
     button2.addEventListener('click', hidesecondParagraph)
 }
@@ -39,7 +39,7 @@ function showsecondParagraph() {
 function hidesecondParagraph() {
     secondParagraph.style.color = "transparent";
     image2.style.display = "none"
-    button2.innerHTML = "> Tea Cozy";
+    button2.innerHTML = "> Photomatic";
     button2.removeEventListener('click', hidesecondParagraph)
     button2.addEventListener('click', showsecondParagraph)
 }
