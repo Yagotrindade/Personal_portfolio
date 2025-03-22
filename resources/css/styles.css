@@ -5,6 +5,14 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
 header{
     display: flex;
     position: fixed;
@@ -94,12 +102,19 @@ p{
 
 }
 
+.large{
+    height: 15vh;
+}
+
+.small{
+    height: 7.5vh;
+}
+
 .division{
     background-color: transparent;
     margin-top: 1.5rem;
     background-image: radial-gradient(black 10%, transparent 10%);
     background-size: 10px 10px;
-    height: 15vh;
     width: 100%;
 }
 
@@ -115,7 +130,7 @@ p{
     display: flex;
     align-items: center;
     width: 100%;
-    margin-left: 4%;
+    padding-left: 4%;
 }
 
 .about-me{
@@ -127,15 +142,6 @@ p{
 
 }
 
-.button-container{
-    margin-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 40%;
-    margin-left: 6%;
-    border-right: 2px solid black;
-}
 
 .projects-section-title{
     margin-top: 4rem;
@@ -170,20 +176,91 @@ button:hover{
 }
 
 .button-container{
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    width: 40%;
+    margin-left: 6%;
+    border-right: 2px solid black;
 }
 
-#first-paragraph{
-    display: none;
+
+.image-container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-left: 6%;
 }
 
-#second-paragraph{
-    display: none;
+.project-img{
+    width: 100%;
+    height: auto;
+    box-shadow: -5px 5px rgba(25, 31, 55,0.4);
 }
 
-#third-paragraph{
-    display: none;
+.project-img:hover{
+    position: relative;
+    bottom: 3px;
+    left: 3px;
+    box-shadow: -7px 7px rgba(25, 31, 55,0.7);
+    transition: box-shadow 0.1s ease-in-out ;
+}
+
+
+#project-1-image, #project-2-image, #project-3-image{
+    display: none
+}
+
+#first-paragraph, #second-paragraph, #third-paragraph{
+    color: transparent;
+    user-select: none;
+}
+
+
+.division:last-of-type{
+    margin-top: 0;
+    background-image: radial-gradient(rgb(255, 255, 255) 10%, transparent 10%);
+    background-color: rgb(25, 31, 55);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    background-color: rgb(25, 31, 55);
+    width: 100vw;
+    display: block;
+    
+}
+
+.footer-title{
+    color: rgb(255,255,255);
+    padding-top: 7vh;
+    margin-left: 4%
+}
+
+.skill-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.skill-container{
+    display: flex;
+    margin-left: 50px;
+    justify-content: flex-start;
+    gap: 1em;
 }
