@@ -4,13 +4,18 @@ const projects = [
     { button: 'project-3', paragraph: 'third-paragraph', image: 'project-3-image', label: 'Style Guide' }
 ];
 
+let activeIndex = null;
+
 function toggleProject(index) {
+    const isSameProject = index === activeIndex;
+    activeIndex = isSameProject ? null : index;
+
     projects.forEach((project, i) => {
         const paragraph = document.getElementById(project.paragraph);
         const image = document.getElementById(project.image);
         const button = document.getElementById(project.button);
-        const isActive = i === index;
-        
+        const isActive = i === activeIndex;
+
         paragraph.style.color = isActive ? 'black' : 'transparent';
         image.style.display = isActive ? 'block' : 'none';
         button.innerHTML = isActive ? `V ${project.label}` : `> ${project.label}`;
